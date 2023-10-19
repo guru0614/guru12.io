@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #651e1e;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: url(https://img.freepik.com/free-vector/colorful-dark-wavy-background_23-2148400088.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+}
+
+.navbar {
+    background-color: rgb(206, 189, 222);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;  
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #690f36;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: rgb(16, 64, 142);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s ;
+}
+
+.right ul li a:hover {
+    background-color: #cad8dc;
+    border-radius: 7px;
+    color: rgb(113, 58, 164);
+}
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(149, 120, 177);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
+
+  
+.main{
+    margin-left: 40px;
+    margin-top: 200px;
+    bottom: 100px;
+    height: 100vh;
+}
+h2{
+    margin-top:100px;
+    margin-left: 20px;
+    color: rgb(240, 203, 203);
+    font-family:'Times New Roman', Times, serif;
+    
+    font-size: 60px;
+}
+p{
+    top: 200px;
+    margin-left: 20px;
+    color: rgb(243, 214, 214);
+    font-family:'Times New Roman', Times, serif;
+    text-align: left    ;
+
+}
+
+button{
+    
+    margin-top: 30px;
+    width: 300px;
+    height: 55px;
+    padding: 10px auto;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+#btns{
+    width: 256px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    height: 50px;
+    
+}
+a img{
+    height: 30px;
+    width: 35px;
+    margin-left: 5px;
+    padding-top: 5px;
+    
+}
+
+#features{
+    background: url(https://st.depositphotos.com/1268628/4018/i/450/depositphotos_40189031-stock-photo-blue-abstract-background-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+    
+}
+#features::before{
+    content: '';
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0);
+}
+.span-1{
+    padding-right: 70px;
+    margin-left: 150px;
+}
+.span-2{
+    padding-right: 70px;
+}
+h3{
+    
+    color: rgb(89, 9, 9);
+    font-size: 40PX;
+    text-align: center;
+    text-decoration:none;
+    font-family:'Times New Roman', Times, serif;
+
+      
+}
+span img{
+animation: pulse 1s alternate infinite; 
+
+}
+@keyframes pulse{
+    from {
+      transform: scale(.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .contact {
+    background: #b5e2f4;
+    position: relative;
+    height: 92vh;
+    height: 100vh;
+  }
+  
+  .contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .contact-content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #470d85;
+    padding-bottom: 0.5rem;
+  }
+  
+  .contact-content .mail {
+    color: #404011;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+    padding-left:110px ;
+  }
+  
+  .contact-content .links {
+    color: #146154;
+    padding: 0.5rem;
+    padding-bottom: 1.8rem;
+    font-size: 1rem;
+    padding-left: 250px;
+  }
+  
+  .contact-content a {
+    text-decoration: none;
+    color: #163933;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .contact-content a:hover {
+    color: #f0f0e6;
+  }
+  
+  
+  
+
+
+
+ 
